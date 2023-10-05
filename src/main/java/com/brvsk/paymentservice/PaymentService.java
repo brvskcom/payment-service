@@ -1,6 +1,7 @@
 package com.brvsk.paymentservice;
 
 import com.brvsk.commons.payment.PaymentRequest;
+import com.brvsk.commons.payment.PaymentResponse;
 import org.springframework.stereotype.Service;
 
 import java.util.UUID;
@@ -9,9 +10,9 @@ import java.util.UUID;
 public class PaymentService {
 
 
-    public String processPayment(PaymentRequest paymentRequest) {
-        UUID fakePaymentResponse = UUID.randomUUID();
+    public PaymentResponse processPayment(PaymentRequest paymentRequest) {
+        String fakePaymentResponse = UUID.randomUUID().toString();
 
-        return fakePaymentResponse.toString();
+        return new PaymentResponse(fakePaymentResponse);
     }
 }
