@@ -1,7 +1,7 @@
 package com.brvsk.paymentservice;
 
-import com.brvsk.commons.payment.PaymentRequest;
-import com.brvsk.commons.payment.PaymentResponse;
+import com.brvsk.commons.clients.payment.PaymentRequest;
+import com.brvsk.commons.clients.payment.PaymentResponse;
 import org.springframework.stereotype.Service;
 
 import java.util.UUID;
